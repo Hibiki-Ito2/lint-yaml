@@ -1,0 +1,11 @@
+---
+spec:
+  tasks:
+    - name: run-custom-task
+      taskRef:
+        apiVersion: example.dev/v1alpha1
+        kind: Example
+        name: myexample
+      workspaces:
+        - name: my-workspace
+
